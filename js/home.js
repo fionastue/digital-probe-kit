@@ -291,7 +291,6 @@ function showDailyTask(dayCounter) {
 
   if (daily_questions[lang][dayCounter].img !== null) {
     const imgEl = document.getElementById("dailyquestion-img");
-    console.log(imgEl);
     imgEl.addEventListener("click", () => showImage(imgEl));
   }
 }
@@ -325,7 +324,6 @@ async function submitEntry(e) {
     });
 
     await Promise.all(uploadPromises);
-    console.log(uploadedFileNames);
   }
 
   // Eingaben in Tabelle speichern

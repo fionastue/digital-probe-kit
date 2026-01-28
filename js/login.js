@@ -160,7 +160,6 @@ function attachLoginHandler() {
       password.style.borderColor = "red";
       showToast(error.message, "error");
     } else {
-      console.log("User:", data.user);
       window.location.href = "home.html";
     }
   });
