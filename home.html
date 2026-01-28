@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Startseite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <script src="/digital-probe-kit/js/lang.js"></script>
+
+  <body>
+    <div id="toast-container"></div>
+
+    <header class="header">
+      <div><h1 data-i18n="title"></h1></div>
+      <div style="display: flex; flex-direction: row; gap: 20px">
+        <button
+          class="teilnahmeBtn"
+          id="teilnahmeBtn"
+          data-i18n="endParticipation"
+        ></button>
+        <button id="logoutBtn" data-i18n="logout"></button>
+        <!-- <div class="lang-switch" id="lang-switch-header">
+          <img src="assets/img/de.png" alt="Deutsch" onclick="setLang('de')" />
+          <img src="assets/img/en.png" alt="English" onclick="setLang('en')" />
+        </div> -->
+      </div>
+    </header>
+
+    <main>
+      <div class="modal" id="modal-teilnahme">
+        <div
+          style="
+            background: #fff;
+            padding: 20px;
+            max-width: 800px;
+            max-height: 100vh;
+            overflow: auto;
+            border-radius: 8px;
+          "
+        >
+          <h3 data-i18n="thankYouParticipationTitle"></h3>
+
+          <p
+            style="
+              font-size: clamp(14px, 1.2vw, 20px);
+              line-height: 1.6;
+              margin-top: 24px;
+            "
+            data-i18n="thankYouParticipationText1"
+          ></p>
+          <p
+            style="
+              font-size: clamp(14px, 1.2vw, 20px);
+              line-height: 1.6;
+              margin-top: 24px;
+            "
+            data-i18n="thankYouParticipationText2"
+          ></p>
+          <div>
+            <div id="checkbox-datenschutz">
+              <input
+                type="checkbox"
+                name="benachrichtigung"
+                id="benachrichtigung"
+                required
+              />
+              <label
+                for="benachrichtigung"
+                style="font-size: clamp(14px, 1.2vw, 20px)"
+                data-i18n="emailNotificationOptIn"
+              >
+              </label>
+            </div>
+            <div style="text-align: center; margin-top: 20px">
+              <button
+                class="closeModal"
+                id="closeModal-teilnahme"
+                style="padding: 15px"
+                data-i18n="backButton"
+              ></button>
+              <button
+                class="teilnahmeBtn"
+                id="teilnahmeBeendenBtn"
+                style="padding: 15px"
+                data-i18n="endParticipation"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-willkommen">
+        <div
+          style="
+            background: #fff;
+            padding: 20px;
+            max-width: 1000px;
+            max-height: 100vh;
+            overflow: auto;
+            border-radius: 8px;
+          "
+        >
+          <h3 data-i18n="welcome"></h3>
+
+          <p
+            style="
+              font-size: clamp(14px, 1.2vw, 20px);
+              line-height: 1.6;
+              margin-top: 24px;
+              white-space: pre-line;
+            "
+            data-i18n="welcomeText"
+          ></p>
+          <div id="checkbox-willkommen">
+            <input
+              type="checkbox"
+              name="willkommensnachricht"
+              id="willkommensnachricht"
+            /><label
+              for="willkommensnachricht"
+              style="font-size: 1.2rem"
+              data-i18n="dontShowAgain"
+            ></label>
+          </div>
+          <div>
+            <div style="text-align: center; margin-top: 20px" ;>
+              <button
+                class="closeModal"
+                id="closeModal-willkommen"
+                style="padding: 15px"
+                data-i18n="closeButton"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-figal">
+        <div
+          id="modal-figal2"
+          class="modal-content"
+          style="
+            background: #fff;
+            width: 100%;
+            max-width: 800px;
+            max-height: 90vh;
+            border-radius: 8px;
+            padding: clamp(16px, 3vw, 24px);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <h3 data-i18n="thankYouEntryTitle"></h3>
+
+          <p
+            data-i18n="figalText"
+            style="
+              font-size: clamp(14px, 1.2vw, 20px);
+              line-height: 1.6;
+              margin-bottom: 16px;
+            "
+          ></p>
+          <p
+            data-i18n="figalMusse1"
+            style="
+              font-family: &quot;Times New Roman&quot;, Times, serif;
+              font-size: clamp(14px, 1.2vw, 18px);
+              line-height: 1.6;
+              overflow-y: auto;
+              padding-right: 8px;
+              white-space: pre-line;
+              flex: 1;
+            "
+          ></p>
+          <div>
+            <div style="text-align: center; margin-top: 20px">
+              <button
+                class="closeModal"
+                id="closeModal-figal"
+                style="padding: 15px"
+                data-i18n="closeButton"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tasks">
+        <div class="home-container" id="daily-box"></div>
+
+        <div class="home-container" id="timer-box"></div>
+        <audio
+          id="alarmSound"
+          src="assets/sounds/new-notification-018-363746.mp3"
+        ></audio>
+
+        <div class="home-container" id="musse-box"></div>
+      </div>
+      <div id="dailies">
+        <h3 id="bild-hochladen"></h3>
+        <div id="images-container">
+          <div class="image-card" id="card1">
+            <h3 class="daynr" data-i18n="day1"></h3>
+          </div>
+          <div class="image-card" id="card2">
+            <h3 data-i18n="day2"></h3>
+          </div>
+          <div class="image-card" id="card3">
+            <h3 data-i18n="day3"></h3>
+          </div>
+          <div class="image-card" id="card4">
+            <h3 data-i18n="day4"></h3>
+          </div>
+          <div class="image-card" id="card5">
+            <h3 data-i18n="day5"></h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/home.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/musse.js"></script>
+  </body>
+</html>
