@@ -48,7 +48,7 @@ function renderReflectionForm() {
     <form id="timer-form">
       <textarea
         id="antwort-feld-timer"
-        maxlength="1000"
+        maxlength="3000"
         placeholder="${t.placeholder}"
         required></textarea>
 

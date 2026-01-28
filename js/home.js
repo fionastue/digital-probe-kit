@@ -261,7 +261,7 @@ function showDailyTask(dayCounter) {
       id="daily-feld"
       name="daily-feld"
       placeholder="${t.placeholder}"
-      maxlength="1000"
+      maxlength="3000"
       required
     ></textarea>
     <div style="display: flex; flex-direction: column;">
@@ -280,7 +280,7 @@ function showDailyTask(dayCounter) {
       id="antwort-feld"
       name="antwort-feld"
       placeholder= "${t.placeholder}"
-      maxlength="1000"
+      maxlength="3000"
       required
     ></textarea>
     <button class="task-button" type="submit">Absenden</button>

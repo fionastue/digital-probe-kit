@@ -34,7 +34,7 @@ function openMusseForm() {
         <textarea 
           name="antwort-feld-musse" 
           id="antwort-feld-musse" 
-          maxlength="1000" 
+          maxlength="3000" 
           placeholder="${t.placeholder}"
           required></textarea>
         <button class="task-button" type="submit">${t.submitButton}</button>
