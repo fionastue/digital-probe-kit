@@ -105,6 +105,10 @@ textarea {
   width: 90%;
 }
 
+#daily-feld {
+  min-height: 100px;
+}
+
 #checkbox-datenschutz,
 #checkbox-willkommen {
   display: flex;
@@ -404,6 +408,11 @@ a:hover,
   textarea {
     min-height: 100px;
   }
+
+  
+#daily-feld {
+  min-height: 50px;
+}
 
   #modal-figal2 {
     max-height: 50vh;
