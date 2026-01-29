@@ -260,7 +260,7 @@ function showDailyTask(dayCounter) {
     <textarea
       id="daily-feld"
       name="daily-feld"
-      placeholder="${t.placeholder}"
+      placeholder="${t.placeholderdaily}"
       maxlength="3000"
       required
     ></textarea>

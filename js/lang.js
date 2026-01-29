@@ -48,6 +48,7 @@ const TEXT = {
     dailyQuestionTitle:
       "Was ist dir vom heutigen Tag besonders in Erinnerung geblieben?",
     placeholder: "Schreibe deine Gedanken auf ...",
+    placeholderdaily: "Ein Gedanke, ein Moment oder etwas Kleines, das dir heute aufgefallen ist ...",
     addPhotosHint:
       "Gerne kannst du deinen heutigen Eintrag auch durch Fotos ergänzen:",
 
@@ -209,6 +210,8 @@ Aber wie wird das, was man in Muße tut, durch die Muße verändert? Was ist and
       "You have answered all five daily questions. Thank you for taking the time!",
     dailyQuestionTitle: "What stood out to you most about today?",
     placeholder: "Write down your thoughts ...",
+    placeholderdaily: "A thought, a moment, or something small that stood out to you today ...",
+
     addPhotosHint: "Feel free to add photos to your entry today:",
 
     title: "Digital Probe Kit",
