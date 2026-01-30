@@ -31,9 +31,9 @@ function switchToRegister() {
 <label for="ageSelect">${t.agegroup}:</label>
 <select id="ageSelect" name="age" style="max-width: 50%" required>
   <option value="">${t.chooseage}</option>
-  <option value="18-25">18–25</option>
-  <option value="26-45">26–45</option>
-  <option value="46-55">46–65</option>
+  <option value="18-25">18-25</option>
+  <option value="26-45">26-45</option>
+  <option value="46-65">46-65</option>
   <option value="66+">66+</option>
 </select>
 

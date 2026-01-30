@@ -134,7 +134,7 @@ Aber wie wird das, was man in Muße tut, durch die Muße verändert? Was ist and
     timerIntro: `
       Nimm dir ein paar Minuten Zeit, um bewusst nichts zu tun. Nach
       Ablauf der Zeit wirst du gebeten, deine Gedanken und Gefühle, die
-      während dieser Zeit aufgekommen sind, auszuschreiben.
+      während dieser Zeit aufgekommen sind, aufzuschreiben.
     `,
 
     minutes: "Minuten",
