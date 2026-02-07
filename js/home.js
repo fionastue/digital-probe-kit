@@ -27,7 +27,7 @@ const daily_questions = {
       img: "assets/img/kalendervergleich.jpg",
     },
     5: {
-      text: "Haben die Fragen und Aufgaben der vergangenen Tage etwas in dir verändert? Ist dir zum Beispiel etwas aufgefallen, was vorher keine Rolle gespielt hat?",
+      text: "Haben die Fragen der vergangenen Tage etwas daran verändert, wie du deinen Alltag wahrnimmst oder über bestimmte Themen nachdenkst?",
       img: null,
     },
   },
@@ -50,7 +50,7 @@ const daily_questions = {
       img: "assets/img/kalendervergleich.jpg",
     },
     5: {
-      text: "Have the questions and tasks of the past days changed anything for you? For example, have you noticed something that did not play a role before?",
+      text: "Did the questions over the past few days influence how you perceive your daily life or think about certain topics",
       img: null,
     },
   },
@@ -61,15 +61,15 @@ const short_questions = {
     1: "Wie organisierst du deinen Alltag?",
     2: "Wann fühlt sich ein Tag für dich „produktiv“ an?",
     3: "Was denkst du über den Artikel zur Entwicklung der Lebensvision?",
-    4: "Welcher Kalender spricht dich eher an?",
-    5: "Haben die Fragen und Aufgaben der vergangenen Tage etwas in dir verändert?",
+    4: "Welche Kalenderführung spricht dich eher an: völlig durchgeplant oder mit Fokus auf einzelne Ereignisse?",
+    5: "Haben die Fragen der vergangenen Tage etwas daran verändert, wie du deinen Alltag wahrnimmst oder über bestimmte Themen nachdenkst?",
   },
   en: {
     1: "How do you organize your daily life?",
     2: "When does a day feel “productive” to you?",
     3: "What do you think about the article on developing a life vision?",
-    4: "Which calendar appeals to you more?",
-    5: "Have the questions and tasks of the past days changed anything for you?",
+    4: "Which type of calendar use appeals to you more: completely scheduled or focused on fewer events?",
+    5: "Did the questions over the past few days influence how you perceive your daily life or think about certain topics",
   },
 };
 
