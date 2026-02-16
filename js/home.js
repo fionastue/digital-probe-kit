@@ -43,7 +43,7 @@ const daily_questions = {
     },
     3: {
       text: "Please read the following excerpt. It is taken from a guide for students that aims to help develop a life vision. Write down any thoughts or feelings that arise spontaneously while reading.<p id='magazinlink'>You can find the full article <a target='_blank' id='magazinurl' href='https://issuu.com/zeitmagazine/docs/heft-pdf_ratgeber_mental_health/32'>here</a>.</p>",
-      img: "assets/img/zeitmagazin2024.jpg",
+      img: "assets/img/zeitmagazin2024-en.jpg",
     },
     4: {
       text: "Please look at the two calendars shown. Which one appeals to you more? What assumptions do you associate with people who use their calendars in these respective ways?",
