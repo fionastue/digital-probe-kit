@@ -285,9 +285,9 @@ function showDailyTask(dayCounter) {
     ></textarea>
     <button class="task-button" type="submit">Absenden</button>
   </form>`;
-  document
-    .getElementById("antwort-form")
-    .addEventListener("submit", submitEntry);
+
+  const antwortForm = document.getElementById("antwort-form")
+  antwortForm?.addEventListener("submit", submitEntry);
 
   if (daily_questions[lang][dayCounter].img !== null) {
     const imgEl = document.getElementById("dailyquestion-img");
