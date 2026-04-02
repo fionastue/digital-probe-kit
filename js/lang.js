@@ -61,9 +61,7 @@ const TEXT = {
     thankYouParticipationText1: `
       Deine Teilnahme hat mir sehr bei der Durchführung meiner
       Masterarbeit geholfen. Ich hoffe, dass du durch die Fragen auch
-      selbst Anregungen zur Reflexion mitnehmen konntest. Wenn du
-      Interesse hast, informiere ich dich in einigen Wochen per
-      E-Mail über die Ergebnisse.`,
+      selbst Anregungen zur Reflexion mitnehmen konntest.`,
     thankYouParticipationText2: `
       Mit einem Klick auf „Teilnahme beenden" wird deine Teilnahme
       endgültig abgeschlossen. Wenn du doch noch einen Eintrag
@@ -222,9 +220,7 @@ Aber wie wird das, was man in Muße tut, durch die Muße verändert? Was ist and
     thankYouParticipationText1: `
       Your participation has been a great help for the completion of my
       master's thesis. I hope that the questions also provided you with
-      impulses for personal reflection. If you are interested, I would
-      be happy to inform you about the results via email in a few
-      weeks.`,
+      impulses for personal reflection.`,
     thankYouParticipationText2: `
       By clicking "End participation”, your participation will be
       completed permanently. If you would like to add another entry,
